@@ -13,10 +13,16 @@ $(document).ready(function() {
     var answer = parseInt(Q1)+parseInt(Q2)+parseInt(Q3)+parseInt(Q4)+parseInt(Q5)+parseInt(Q6);
     $("#input").text("HI THERE! HERE'S WHAT YOU SCORED: " +answer+ "%");
        
-       if (answer > 40){
+       if (answer === 40){
            $(#display).text("pass");
-           $(#display).text("pass")
-       }else{
+       }
+       else if (result >=40||<=70 ){
+        $(#display).text("average")
+       }
+       else if (result >=70||<=120)
+       $(#display).text("great") 
+       }
+       else{
         $(#display).text("fail") 
        }
         
