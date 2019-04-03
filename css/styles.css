@@ -1,6 +1,5 @@
-#user{
-    float: right;
-    margin-right: 500px;
+#percentage {
+    display: none;
 }
 #submit{
     float: right;
@@ -12,15 +11,6 @@
 }
 .container{
     background-image: url(image/hack.jpeg);
-}
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    background-color: blue;
-    color: white;
 }
 p{
     text-align: center;
