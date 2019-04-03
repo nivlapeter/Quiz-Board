@@ -10,13 +10,13 @@ $(document).ready(function () {
   
       var results = parseInt(Q1 + Q2 + Q3 + Q4 + Q5);
 
-      if(percentage >= 80) {
+      if(results >= 80) {
         $("#percentage").show(function() {
           $(".score").text(results);
         $(".condition").text("Passed Excellently!");
         })
         
-      }else if(percentage >= 50) {
+      }else if(results >= 50) {
         $("#percentage").show(function() {
           $(".score").text(results);
         $(".condition").text("Passed fairly!");
