@@ -1,116 +1,133 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Quiz Bord</title>
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>QUIZ BOARD</h1>
+            <h1><u>QUIZ BOARD</u></h1>
         </div>
 
         <h2>Answer all Questions accordingly, GOOD LUCK!</h2>
-        <form id="quiz">
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>1.Inside which HTML element do we put the javascript</p>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="1a" name="Q1" value="0" />scripting<br>
-                                <input type="radio" id="1b" name="Q1" value="0" />javascript<br>
-                                <input type="radio" id="1a" name="Q1" value="20" required />js<br>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <form id="quiz"><br><br>
 
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>2.Which is not a part of the box model?</p><br>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="2a" name="Q2" value="0" />Padding.<br>
-                                <input type="radio" id="2b" name="Q2" value="0" />Margin<br>
-                                <input type="radio" id="2b" name="Q2" value="20" required />terrace<br>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>3.Another name for Business Logic</p><br>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="1a" name="Q1" value="0" />Front end<br>
-                                <input type="radio" id="3a" name="Q3" value="20" />Back end<br>
-                                <input type="radio" id="3b" name="Q3" value="0" />Side end<br>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>4.Where is the correct place to insert javascript</p><br>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="1a" name="Q1" value="20" required /> body <br>
-                                <input type="radio" id="4a" name="Q4" value="0" />head & body <br>
-                                <input type="radio" id="4b" name="Q4" value="0" />head <br>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>5.How do you write Hello world in alert</p><br>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="1a" name="Q1" value="0" />alert box("hello world")<br>
-                                <input type="radio" id="5a" name="Q5" value="0" />msg box("hello world") <br>
-                                <input type="radio" id="5b" name="Q5" value="20" required />alert ("hello world") <br>
-                            </label>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <p>6.How do we create a funtion in javascript</p><br>
-                        <div class="well">
-                            <label>
-                                <input type="radio" id="1a" name="Q1" value="20" required />function myFunction()<br>
-                                <input type="radio" id="5a" name="Q6" value="0" />function:myFunction<br>
-                                <input type="radio" id="5b" name="Q6" value="0" />function=myFunction<br>
-                            </label>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-success" id="green">SUBMIT</button><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q1">1.Inside which HTML element do we put the javascript</label></p>
+                            <div class="well">
 
-        </form> <br><br>
-        <div id="display"></div>
+                                <input type="radio" name="Q1" value="0">scripting<br>
+                                <input type="radio" name="Q1" value="0">javascript<br>
+                                <input type="radio" name="Q1" value="20">js<br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q2">2.Which is not a part of the box model?</label></p><br>
+                            <div class="well">
+
+                                <input type="radio" name="Q2" value="0">Padding.<br>
+                                <input type="radio" name="Q2" value="0">Margin<br>
+                                <input type="radio" name="Q2" value="20">terrace<br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q3">3.Another name for Business Logic</label></p><br>
+                            <div class="well">
+
+                                <input type="radio" name="Q3" value="0">Front end<br>
+                                <input type="radio" name="Q3" value="20">Back end<br>
+                                <input type="radio" name="Q3" value="0">Side end<br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q4">4.Where is the correct place to insert javascript</label></p><br>
+                            <div class="well">
+
+                                <input type="radio" name="Q4" value="20"> body <br>
+                                <input type="radio" name="Q4" value="0">head & body <br>
+                                <input type="radio" name="Q4" value="0">head <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q5">5.How do you write Hello world in alert</label></p><br>
+                            <div class="well">
+
+                                <input type="radio" name="Q5" value="0">alert box("hello world")<br>
+                                <input type="radio" name="Q5" value="0">msg box("hello world") <br>
+                                <input type="radio" name="Q5" value="20">alert ("hello world") <br>
+
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p><label for="Q6">6.How do we create a funtion in javascript</label></p><br>
+                            <div class="well">
+
+                                <input type="radio" name="Q6" value="20">function myFunction()<br>
+                                <input type="radio" name="Q6" value="0">function:myFunction<br>
+                                <input type="radio" name="Q6" value="0">function=myFunction<br>
+
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <button type="button" id="btn-submit">Submit</button>
+
+        <div class="well">
+            <div id="percentage">
+                Your results are: <span class="score"></span>
+                <br>
+                You've: <span class="condition"></span>
+
+            </div>
+        </div>
+
+
     </div>
-
 </body>
 
-</html> -->
+</html>
